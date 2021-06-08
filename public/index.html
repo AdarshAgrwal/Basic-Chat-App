@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websocket 101</title>
+    <link href="/style.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.3/socket.io.js" integrity="sha512-Jr0UIR/Q8MUX+93zjDOhuDUKLqJZObtwpkLJQcR9qMaLgL0thet39IORuavUaZFkZ8a4ktrUsKPM9mf5LWMduA==" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="mariochat"> <!--contain everything-->
+        <div id="chat-window"> <!--displays everything-->
+            <div id="output"></div> <!--Data is beig displayed here i.e. whe the server recieves a message then it emmits the message to the rest of the cliet i.e. browser where it is handled agai ad will be displayed i this window-->
+            <div id="feedback"></div>
+        </div>
+        <input type="text" id="handle" placeholder="Handle"/>
+        <input type="text" id="message" placeholder="Message"/>
+        <button id="send">Send</button>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
